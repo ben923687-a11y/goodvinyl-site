@@ -2,12 +2,14 @@
     margin:0;
     padding:0;
 }
+body{
+    background: linear-gradient(to right, #3c4129ea 0% , #000000 50%,#3c4129ea 100%);
+}
 header{
-    background: linear-gradient(to right, #000 0%, #111 50%, #000 100%);
+    background: linear-gradient(to right, #000000 0%, #3c4129ea 50%, #000 100%);
     text-align:center;
     box-sizing: border-box;
     padding: 80px 20px;
-    margin-bottom:40px;
     width:100%;
 }
 body {
@@ -35,6 +37,145 @@ body {
         background-position:0% 50%;
     }
 }
+.title-description{
+    margin-top:20px;
+    margin-bottom:50px;
+}
+.contact-data{
+    color:black;
+    background-color:#39ff14;
+    text-decoration:none;
+    padding:20px 30px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:all 0.15s linear;
+    user-select:none;
+}
+.contact-data:hover{
+    opacity: 0.8;
+}
+.contact-data:active{
+    opacity:0.6;
+}
+.about-us-box{
+    background: linear-gradient(to right, #000000 5%, #3c4129ea 50%, #000 95%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:70px 0px;
+    row-gap:40px;
+    flex-direction:column;
+    border-radius:20px;
+}
+.about-us-title{
+    color:#39ff14;
+    font-weight:bold;
+    font-size:30px;
+}
+.about-us-desc{
+    max-width:860px;
+    padding:0px 40px;
+}
+.service{
+    text-align:center;
+    color:#39ff14;
+    font-weight:bold;
+    font-size:30px;
+    margin:0px;
+    padding:30px 0px;;
+    background: linear-gradient(to right, #3c4129ea 0% , #000000 50%, #3c4129ea 100%);
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:30px;
+    margin:0px auto;
+    max-width:1000px;
+    width:100%;
+    padding-bottom:40px;
+    background: linear-gradient(to right, #3c4129ea 0% , #000000 50%,#3c4129ea 100%);
+}
+.box{
+    border:solid 1px rgba(57,255,20,0.3);
+    border-radius:20px;
+    text-align:center;
+    padding:20px;
+    background-color:#0d0d0d;
+    max-width:400px;
+    transition:all 0.3s linear;
+    margin:0px 10px;
+}
+.grid-title, .galeria-title,.contact-title{
+    color:#39ff14;
+    font-weight:bold;
+    margin-bottom:15px;
+    text-align:center;
+}
+.grid-desc{
+    max-width:400px;
+    text-align:center;
+}
+.box:hover{
+    transform:translateY(-5px);
+}
+.galeria{
+    background: linear-gradient(to right, #3c4129ea 5% , #000000 50%,#3c4129ea 95%);
+    padding:60px 40px;
+}
+.galeria-title{
+    font-size:30px;
+    text-align:center;
+}
+.container-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px, 1fr));
+    gap:20px;
+    justify-content: center;
+    margin: 0 auto;
+    padding:0 auto;
+    max-width:900px;
+}
+.imags{
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+    transition:all 0.4s linear;
+    border-radius:10px;
+}
+.imags:hover{
+    transform:scale(1.1);
+}
+#contacts{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.contact-title{
+    margin-top:80px;
+    margin-bottom:40px;
+    font-size:40px;
+    background:linear-gradient(to right, #39ff14,white,#39ff14);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    background-size:600px;
+    animation:spin 6s linear infinite;
+}
+.telephone,.email,.location{
+    text-align:center;
+    margin-bottom:15px;
+    color:white;
+    font-weight:bold;
+}
+footer{
+    margin-top:100px;
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}}
 .title-description{
     margin-top:20px;
     margin-bottom:50px;
